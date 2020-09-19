@@ -1,0 +1,2 @@
+# IAmRich
+Mock
