@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_1_IAmRich" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond" translatesAutoresizingMaskIntoConstraints="NO" id="ctB-jN-sMv">
+                                <rect key="frame" x="47.5" y="235.5" width="280" height="196"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ctB-jN-sMv" secondAttribute="height" multiplier="93:65" id="beY-Jt-j0f"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Am Rich!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" preferredMaxLayoutWidth="210.5" translatesAutoresizingMaskIntoConstraints="NO" id="rcO-un-nCl">
+                                <rect key="frame" x="83.5" y="120" width="208.5" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Htv-dJ-qXu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="51"/>
+                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="-2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQw-gj-kVH">
+                                <rect key="frame" x="149.5" y="479" width="76" height="35"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Mce-vL-fqB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                <color key="tintColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=" Press Me ">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ilh-wB-rAm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rcO-un-nCl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L1u-DY-RyQ"/>
+                            <constraint firstItem="ctB-jN-sMv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RlR-3Q-an2"/>
+                            <constraint firstItem="ctB-jN-sMv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cLL-rg-bQ5"/>
+                            <constraint firstItem="VQw-gj-kVH" firstAttribute="top" secondItem="ctB-jN-sMv" secondAttribute="bottom" constant="47.5" id="s7N-hd-PuD"/>
+                            <constraint firstItem="VQw-gj-kVH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tCc-Iz-W4Y"/>
+                            <constraint firstItem="ctB-jN-sMv" firstAttribute="top" secondItem="rcO-un-nCl" secondAttribute="bottom" constant="59.5" id="zAJ-Xs-Suy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ImageViewOutlet" destination="ctB-jN-sMv" id="9kM-Ge-Wr4"/>
+                        <outlet property="buttonPress" destination="VQw-gj-kVH" id="a2E-nP-cj2"/>
+                        <outlet property="labelTitle" destination="rcO-un-nCl" id="gjs-ZB-sG1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58.399999999999999" y="112.89355322338831"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="diamond" width="280" height="195.5"/>
+    </resources>
+</document>
