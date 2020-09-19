@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         
         
         let action = UIAlertAction(title: "Aceptar", style: .default) { (_) in
-            print("Has pulsado el botón Aceptar")
+            print("Has pulsado el botón Ok")
         }
         
         alert.addAction(action)
